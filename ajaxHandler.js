@@ -79,14 +79,3 @@ function isValidItem(item, expectedKeys) {
   return true;
 }
 
-ajaxHandler(
-  'https://api.example.com/data',
-  'GET',
-  null,
-  { key1: 'string', key2: 'int' }, // Define expected keys and their types
-  function (responseCode, responseData) {
-    console.log('Response Code:', responseCode);
-    console.log('Response Data:', responseData);
-  },
-  true // Set to true to enable debug mode
-);
