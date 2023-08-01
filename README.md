@@ -1,4 +1,5 @@
-Ajax function that takes list of expected keys, and return what keys from json response it can find. There is also a test html file included
+Ajax function that takes list of expected keys, and return what keys from json response it can find. There is  a test html file included, and
+a debug option; to print out random values corresponding to expected json response.
 
 Why?
 
