@@ -1,4 +1,4 @@
-Ajax function that takes list of expected keys and return what keys from json response it can find. There is also a test html file
+Ajax function that takes list of expected keys, and return what keys from json response it can find. There is also a test html file
 
 Why?
 
