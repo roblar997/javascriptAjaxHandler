@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AJAX Handler Example</title>
+</head>
+<body>
+  <h1>Response Data:</h1>
+  <pre id="responseData"></pre>
+
+
+  <script src="ajaxHandler.js"></script>
+
+  <script>
+
+    const url = 'https://api.example.com/data';
+    const method = 'GET';
+    const requestBody = null;
+    const expectedKeys = { id: 'string', pris: 'int', antall: 'int'  };
+    const debugOn = true;
+
+    ajaxHandler(url, method, requestBody, expectedKeys, handleResponse, debugOn);
+
+    function handleResponse(responseCode, responseData) {
+      const responseDataElement = document.getElementById('responseData');
+      responseDataElement.textContent = JSON.stringify(responseData, null, 2);
+    }
+  </script>
+</body>
+</html>
